@@ -60,10 +60,12 @@ struct ContentView: View {
 
             HStack {
                 TextField("Enter your message", text: $command, axis: .vertical)
-                .onSubmit {
-                    KataGoHelper.sendCommand(command)
-                    command = ""
-                }
+                    .disableAutocorrection(true)
+                    .textInputAutocapitalization(.never)
+                    .onSubmit {
+                        KataGoHelper.sendCommand(command)
+                        command = ""
+                    }
                 Button(action: {
                     KataGoHelper.sendCommand(command)
                     command = ""
