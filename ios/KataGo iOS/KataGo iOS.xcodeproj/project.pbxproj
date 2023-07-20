@@ -136,6 +136,8 @@
 		E18F3F7A2A514BC600D335E1 /* KataGoModel19x19fp16.mlpackage in Resources */ = {isa = PBXBuildFile; fileRef = E18F3F732A514B9500D335E1 /* KataGoModel19x19fp16.mlpackage */; };
 		E1B922752A5179A7006D3137 /* KataGoHelper.mm in Sources */ = {isa = PBXBuildFile; fileRef = E1B922742A5179A7006D3137 /* KataGoHelper.mm */; };
 		F554632E2A67E18F005EEEB3 /* GtpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F554632D2A67E18F005EEEB3 /* GtpView.swift */; };
+		F55463302A67E6F4005EEEB3 /* QipanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F554632F2A67E6F4005EEEB3 /* QipanView.swift */; };
+		F55463342A67EB9A005EEEB3 /* QipanData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55463332A67EB9A005EEEB3 /* QipanData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -365,6 +367,8 @@
 		E1B922742A5179A7006D3137 /* KataGoHelper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = KataGoHelper.mm; sourceTree = "<group>"; };
 		E1B922762A5179C6006D3137 /* KataGoHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KataGoHelper.h; sourceTree = "<group>"; };
 		F554632D2A67E18F005EEEB3 /* GtpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GtpView.swift; sourceTree = "<group>"; };
+		F554632F2A67E6F4005EEEB3 /* QipanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QipanView.swift; sourceTree = "<group>"; };
+		F55463332A67EB9A005EEEB3 /* QipanData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QipanData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -419,9 +423,10 @@
 		E18F3E0F2A51466A00D335E1 /* KataGo iOS */ = {
 			isa = PBXGroup;
 			children = (
+				F55463322A67E9FA005EEEB3 /* Models */,
+				F55463312A67E95F005EEEB3 /* Views */,
 				E18F3E102A51466A00D335E1 /* KataGo_iOSApp.swift */,
 				E18F3E122A51466A00D335E1 /* ContentView.swift */,
-				F554632D2A67E18F005EEEB3 /* GtpView.swift */,
 				E18F3E142A51466C00D335E1 /* Assets.xcassets */,
 				E18F3E162A51466C00D335E1 /* Preview Content */,
 				E1B922742A5179A7006D3137 /* KataGoHelper.mm */,
@@ -672,6 +677,23 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		F55463312A67E95F005EEEB3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F554632D2A67E18F005EEEB3 /* GtpView.swift */,
+				F554632F2A67E6F4005EEEB3 /* QipanView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F55463322A67E9FA005EEEB3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F55463332A67EB9A005EEEB3 /* QipanData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -817,6 +839,7 @@
 				E18F3F3C2A51491900D335E1 /* test.cpp in Sources */,
 				E18F3F662A51493100D335E1 /* benchmark.cpp in Sources */,
 				E18F3EA82A51485E00D335E1 /* asyncbot.cpp in Sources */,
+				F55463342A67EB9A005EEEB3 /* QipanData.swift in Sources */,
 				E18F3EAE2A51485E00D335E1 /* searchresults.cpp in Sources */,
 				E18F3E702A51483100D335E1 /* testnninputs.cpp in Sources */,
 				E18F3E632A51483100D335E1 /* testsgf.cpp in Sources */,
@@ -894,6 +917,7 @@
 				E18F3F632A51493100D335E1 /* sandbox.cpp in Sources */,
 				E18F3ED82A5148B100D335E1 /* coremlbackend.mm in Sources */,
 				E18F3E5D2A51483100D335E1 /* testmisc.cpp in Sources */,
+				F55463302A67E6F4005EEEB3 /* QipanView.swift in Sources */,
 				E18F3F432A51491900D335E1 /* threadsafecounter.cpp in Sources */,
 				E18F3F692A51493100D335E1 /* selfplay.cpp in Sources */,
 				E18F3EFE2A5148EF00D335E1 /* numpywrite.cpp in Sources */,

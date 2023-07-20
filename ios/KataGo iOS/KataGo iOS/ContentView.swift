@@ -8,8 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var data = QipanData()
     var body: some View {
-        GtpView()
+        ZStack(alignment: .topTrailing) {
+            GtpView()
+            QipanView()
+        }
+        .environmentObject(data)
     }
 }
 
